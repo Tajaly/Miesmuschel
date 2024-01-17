@@ -1,0 +1,10 @@
+{
+    "name": "Magische Miesmuschel",
+    "short_name": "Miesmuschel",
+    "theme_color": "#a7c7e7",
+    "background_color": "#a7c7e7",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }

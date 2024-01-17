@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+
+
+<style>
+.blue-background {
+    background-color: #A7C7E7 ;
+}
+
+.margin-top {
+           margin-top: 70px;
+       }
+
+
+.center {
+    display : flex;
+    justify-content: center;
+}
+.header {
+           margin-top: 70px;
+           font-size: 50px;
+           color: #496260 ;
+           font-family: sans-serif ;
+       }
+
+.answer {
+    margin-top: 70px;
+    font-size: 30px;
+    color: #496260 ;
+    font-family: sans-serif ;
+}
+
+</style>
+
+<script>
+    const answers = ["Eines Tages vielleicht!", "Ich glaub eher nicht.", "Ja." , "Nein."];
+    function ask() {
+        n = Math.floor(Math.random() * (3 - 0 + 1) + 0);
+
+        const answerText = answers[n];
+
+        // Display the answer on the main page
+        document.getElementById("answer-display").textContent = answerText;
+
+
+    }
+</script>
+
+
+<body class="blue-background">
+    <h1 class="header">
+        magische Miesmuschel
+    </h1>
+
+    <p class = answer id="answer-display"></p>
+
+    <div class = "center margin-top">
+        <img onclick="ask()" src="muschel.png"> 
+    </div>
+
+
+
+</body>
+
+
+
+</html>
